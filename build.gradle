@@ -1,5 +1,6 @@
 plugins {
 	id 'java'
+	id 'groovy'
 	alias(libs.plugins.spring.boot)
 	alias(libs.plugins.spring.dependency.management)
 }
@@ -19,6 +20,9 @@ dependencies {
 	testImplementation libs.bundles.spock
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
 }
