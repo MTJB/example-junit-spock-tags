@@ -1,6 +1,6 @@
-package com.mtjb.demo
+package com.mtjb.demo.math
 
-import com.mtjb.demo.math.Divide
+
 import spock.lang.Specification
 import spock.lang.Tag
 
