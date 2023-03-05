@@ -1,0 +1,14 @@
+[versions]
+springBootVersion = "3.0.4"
+dependencyManagementVersion = "1.1.0"
+
+[libraries]
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "springBootVersion" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test"}
+
+[bundles]
+spring-boot-starter = ["spring-boot-starter"]
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springBootVersion" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "dependencyManagementVersion" }
