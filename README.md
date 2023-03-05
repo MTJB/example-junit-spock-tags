@@ -31,7 +31,7 @@ Demo project for JUnit & Spock test grouping using JUnit 5 [tags](https://junit.
 
 ## Run all Multiply or Divide tests
 > Note: this example is using JUnit [tag expressions](https://junit.org/junit5/docs/current/user-guide/#running-tests-tag-expressions), 
-> support for exclusions could be built out by parsing the `groups` parameter and leveraging the `excludeTags` configuration.
+> support for exclusions could be built out by parsing the `groups` parameter and leveraging the `excludeTags` configuration within [build.gradle](build.gradle).
 ```
 ./gradlew test -Dgroups="Multiply | Divide"
 ```
