@@ -3,7 +3,7 @@ Demo project for JUnit & Spock test grouping using JUnit 5 [tags](https://junit.
 
 # Available test tags 🏷️
 - `Spock` - Assigned at the class level to all tests in [src/test/groovy](src/test/groovy)
-- `Junit` - Assigned at the class level to all tests in [src/test/java](src/test/java)
+- `JUnit` - Assigned at the class level to all tests in [src/test/java](src/test/java)
 - `Multiply` - Assigned to all tests testing the [Multiply.java](src/main/java/com/mtjb/demo/math/Multiply.java)
 - `Divide` - Assigned to all tests testing the [Divide.java](src/main/java/com/mtjb/demo/math/Divide.java)
 
