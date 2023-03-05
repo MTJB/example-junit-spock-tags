@@ -21,7 +21,14 @@ dependencies {
 }
 
 test {
-	useJUnitPlatform()
+	useJUnitPlatform {
+
+		def groups = System.getProperty("groups")
+		println(groups)
+		if (groups != null) {
+			includeTags(groups)
+		}
+	}
 	testLogging {
 		events "passed", "skipped", "failed"
 	}
