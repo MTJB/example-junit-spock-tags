@@ -1,12 +1,18 @@
 [versions]
-springBootVersion = "3.0.4"
 dependencyManagementVersion = "1.1.0"
+groovyVersion = "4.0.9"
+spockVersion = "2.3-groovy-4.0"
+springBootVersion = "3.0.4"
 
 [libraries]
+groovy = {module = "org.apache.groovy:groovy-all", version.ref = "groovyVersion"}
+spock = {module = "org.spockframework:spock-core", version.ref = "spockVersion"}
 spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "springBootVersion" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test"}
 
+
 [bundles]
+spock = ["spock", "groovy"]
 spring-boot-starter = ["spring-boot-starter"]
 
 [plugins]

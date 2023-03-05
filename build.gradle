@@ -14,7 +14,9 @@ repositories {
 
 dependencies {
 	implementation libs.bundles.spring.boot.starter
+
 	testImplementation libs.spring.boot.starter.test
+	testImplementation libs.bundles.spock
 }
 
 tasks.named('test') {
